@@ -1,0 +1,18 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: Welcome
+  image: alpine
+  commands:
+  - echo "This is My Personal repo"
+  - echo "Hello World"
+  
+- name: My first step
+  image: alpine
+  commands:
+  - echo "Build Successfull"
+  
+ 
